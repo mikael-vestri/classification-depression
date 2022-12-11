@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "functionTimeout": "-1",
+  "functionTimeout": "00:05:00",
   "logging": {
     "applicationInsights": {
       "samplingSettings": {
@@ -12,12 +12,6 @@
   "extensionBundle": {
     "id": "Microsoft.Azure.Functions.ExtensionBundle",
     "version": "[2.*, 3.0.0)"
-  },
-  "extensions": {
-    "http": {
-        "routePrefix": "api",
-        "maxOutstandingRequests": 2000,
-        "maxConcurrentRequests": 1000
-    }
-}
+  }
+  
 }
